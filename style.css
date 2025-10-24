@@ -1,0 +1,102 @@
+:root {
+    --primary: #2c5e3f;
+    --secondary: #d4a373;
+    --accent: #a33b20;
+    --background: #fefae0;
+    --text: #333333;
+    --text-light: #ffffff;
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text);
+    background-color: var(--background);
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: var(--heading-font);
+}
+
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: var(--primary);
+}
+
+#hero {
+    height: 100vh;
+    background: url('scraped_assets/baonghean_vn_kham-pha-ve-dep-du-lich-cong-dong-ban-yen-hoa-ky-son-10264904_html/images/image_008.png') no-repeat center center/cover;
+    color: var(--text-light);
+}
+
+#hero .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+section {
+    overflow: hidden;
+}
+
+.btn-primary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: #c8925a;
+    border-color: #c8925a;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: var(--primary);
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--secondary) !important;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    h1.display-3 {
+        font-size: 2.5rem;
+    }
+}

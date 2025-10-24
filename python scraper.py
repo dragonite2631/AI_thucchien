@@ -8,9 +8,8 @@ import re
 
 # 1. Dán CÁC URL trang web tham khảo của bạn vào danh sách (list) này
 TARGET_URLS = [
-    "http://dangcongsan.vn/",
-    "https://baochinhphu.vn/",
-    "https://vtv.vn/"
+    "https://vhttdl.nghean.gov.vn/tin-tuc-su-kien/ban-yen-hoa-xa-my-ly-vua-duoc-cong-nhan-la-diem-du-lich-cap-tinh-933574",
+    "https://baonghean.vn/kham-pha-ve-dep-du-lich-cong-dong-ban-yen-hoa-ky-son-10264904.html",
 ]
 
 # 2. Đặt tên thư mục GỐC (nơi sẽ chứa các thư mục con)

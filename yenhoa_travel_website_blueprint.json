@@ -1,0 +1,223 @@
+{
+  "libraries": [
+    {
+      "name": "Bootstrap 5 CSS",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css",
+      "type": "css"
+    },
+    {
+      "name": "Locomotive Scroll CSS",
+      "url": "https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css",
+      "type": "css"
+    },
+    {
+      "name": "Bootstrap 5 JS",
+      "url": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "type": "js"
+    },
+    {
+      "name": "GSAP",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "type": "js"
+    },
+    {
+      "name": "GSAP ScrollTrigger",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "type": "js"
+    },
+    {
+      "name": "Locomotive Scroll JS",
+      "url": "https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js",
+      "type": "js"
+    }
+  ],
+  "designSystem": {
+    "colorPalette": {
+      "primary": "#2c5e3f",
+      "secondary": "#d4a373",
+      "accent": "#a33b20",
+      "background": "#fefae0",
+      "text": "#333333",
+      "text_light": "#ffffff"
+    },
+    "typography": {
+      "headingFont": {
+        "name": "Playfair Display",
+        "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      },
+      "bodyFont": {
+        "name": "Roboto",
+        "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      },
+      "baseFontSize": "16px"
+    }
+  },
+  "navbar": {
+    "design_guidance": "Sử dụng component Navbar của Bootstrap 5. Logo là text. Navbar sẽ trở nên 'sticky' và có nền màu `primary` khi cuộn trang.",
+    "logoText": "Yên Hòa - Về Miền Cổ Tích",
+    "links": [
+      { "text": "Giới Thiệu", "href": "#gioi-thieu" },
+      { "text": "Di Sản Văn Hóa", "href": "#di-san" },
+      { "text": "Điểm Đến", "href": "#diem-den" },
+      { "text": "Trải Nghiệm", "href": "#trai-nghiem" },
+      { "text": "Thư Viện Ảnh", "href": "#thu-vien" },
+      { "text": "Lên Kế Hoạch", "href": "#lien-he" }
+    ]
+  },
+  "sitemap": [
+    {
+      "section_id": "hero",
+      "type": "simple",
+      "design_guidance": "Section chiếm toàn bộ màn hình đầu tiên (fullscreen). Nền là một hình ảnh chất lượng cao về cảnh quan Yên Hòa (sông Nậm Nơn, ruộng bậc thang). Tiêu đề và mô tả ngắn gọn, nổi bật trên nền ảnh tối. Sử dụng font `Playfair Display` cho tiêu đề chính.",
+      "content": {
+        "headline": "Yên Hòa: Nơi Dòng Sông Kể Chuyện",
+        "subheadline": "Khám phá vẻ đẹp hoang sơ và di sản văn hóa độc đáo của người Thái tại miền Tây Nghệ An.",
+        "cta_button": {
+          "text": "Tìm Hiểu Ngay",
+          "href": "#gioi-thieu"
+        }
+      }
+    },
+    {
+      "section_id": "gioi-thieu",
+      "type": "simple",
+      "design_guidance": "Bố cục 2 cột đơn giản. Cột trái chứa văn bản giới thiệu. Cột phải là hình ảnh một ngôi nhà sàn truyền thống hoặc cảnh sinh hoạt của người dân. Sử dụng animation của GSAP để các phần tử hiện ra khi cuộn tới.",
+      "content": {
+        "title": "Chào Mừng Đến Bản Yên Hòa",
+        "body": "Tọa lạc bên dòng sông Nậm Nơn hiền hòa, bản Yên Hòa là điểm du lịch cộng đồng cấp tỉnh, nơi lưu giữ những giá trị văn hóa đặc sắc của đồng bào dân tộc Thái. Với hơn 95 hộ dân, Yên Hòa mở ra một không gian yên bình, nơi du khách có thể trải nghiệm nghề dệt thổ cẩm truyền thống, hòa mình vào thiên nhiên hùng vĩ và khám phá những di tích ngàn năm tuổi."
+      }
+    },
+    {
+      "section_id": "di-san",
+      "type": "simple",
+      "design_guidance": "Sử dụng layout dạng card của Bootstrap. Mỗi card đại diện cho một di sản văn hóa, bao gồm hình ảnh, tiêu đề và mô tả ngắn. Hiệu ứng hover nhẹ nhàng trên các card.",
+      "content": {
+        "title": "Nét Đẹp Di Sản Văn Hóa",
+        "items": [
+          {
+            "title": "Nghề Dệt Thổ Cẩm",
+            "description": "Được công nhận là làng nghề từ năm 2017, thổ cẩm Yên Hòa nổi tiếng với những hoa văn tinh xảo, màu sắc tự nhiên, phản ánh đời sống và tâm hồn của người phụ nữ Thái.",
+            "image_placeholder": "hinh-anh-det-tho-cam.jpg"
+          },
+          {
+            "title": "Lễ Hội Tết Hoa Quả",
+            "description": "Tổ chức thường niên, là dịp để người dân tạ ơn trời đất, cầu cho mùa màng bội thu và là nơi trình diễn các giá trị văn hóa phi vật thể đặc sắc.",
+            "image_placeholder": "hinh-anh-le-hoi.jpg"
+          },
+          {
+            "title": "Kiến Trúc Nhà Sàn",
+            "description": "Những ngôi nhà sàn truyền thống không chỉ là nơi sinh sống mà còn là không gian văn hóa, nơi diễn ra các hoạt động cộng đồng và lưu giữ nếp sống của nhiều thế hệ.",
+            "image_placeholder": "hinh-anh-nha-san.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "section_id": "diem-den",
+      "type": "complex",
+      "design_guidance": "Đây là section phức tạp, cần một component riêng. Mục tiêu là tạo một bản đồ tương tác hoặc một timeline trực quan giới thiệu các điểm đến. Placeholder dưới đây sẽ được thay thế bằng code component được tạo ở bước sau.",
+      "placeholder_id": "complex-component-wrapper-attractions",
+      "content": {
+        "title": "Những Điểm Đến Không Thể Bỏ Lỡ",
+        "points_of_interest": [
+          {
+            "name": "Tháp Cổ Xốp Lợt",
+            "description": "Di tích kiến trúc nghệ thuật cấp tỉnh với hơn 1000 năm tuổi, một điểm đến tâm linh và lịch sử quan trọng.",
+            "coordinates": "19.534, 104.251"
+          },
+          {
+            "name": "Dòng Sông Nậm Nơn",
+            "description": "Trải nghiệm đi thuyền ngắm cảnh, chèo kayak, hoặc đơn giản là tận hưởng sự yên bình của dòng sông kết nối biên giới Việt - Lào.",
+            "coordinates": "19.530, 104.255"
+          }
+        ]
+      }
+    },
+    {
+      "section_id": "trai-nghiem",
+      "type": "simple",
+      "design_guidance": "Sử dụng layout lưới (grid) 3 cột. Mỗi mục là một 'card' với icon, tiêu đề và mô tả ngắn gọn về một trải nghiệm du lịch. GSAP sẽ được dùng để tạo hiệu ứng xuất hiện đồng bộ cho các card.",
+      "content": {
+        "title": "Trải Nghiệm Độc Đáo Chờ Đón Bạn",
+        "activities": [
+          { "icon": "icon-homestay.svg", "title": "Lưu Trú Homestay", "description": "Sống cùng người dân bản địa, tìm hiểu văn hóa và thưởng thức không khí trong lành." },
+          { "icon": "icon-food.svg", "title": "Ẩm Thực Địa Phương", "description": "Thưởng thức các món ăn đặc sản của người Thái như cá nướng, xôi ngũ sắc, rau rừng." },
+          { "icon": "icon-kayak.svg", "title": "Chèo Thuyền Kayak", "description": "Khám phá vẻ đẹp của sông Nậm Nơn qua các hoạt động thể thao dưới nước." },
+          { "icon": "icon-weaving.svg", "title": "Học Dệt Vải", "description": "Tham gia một buổi học ngắn để tự tay dệt nên những hoa văn thổ cẩm đầu tiên." },
+          { "icon": "icon-trekking.svg", "title": "Đi Bộ Khám Phá", "description": "Dạo quanh bản làng, thăm những cánh đồng và tìm hiểu về cuộc sống thường ngày." },
+          { "icon": "icon-culture.svg", "title": "Giao Lưu Văn Nghệ", "description": "Tham gia các buổi giao lưu văn nghệ, múa sạp cùng câu lạc bộ văn hóa của bản." }
+        ]
+      }
+    },
+    {
+      "section_id": "thu-vien",
+      "type": "complex",
+      "design_guidance": "Section này cần một component thư viện ảnh (gallery) hiện đại. Placeholder dưới đây sẽ được thay thế bằng một grid ảnh có tính năng lightbox.",
+      "placeholder_id": "complex-component-wrapper-gallery",
+      "content": {
+        "title": "Khoảnh Khắc Yên Hòa"
+      }
+    },
+    {
+      "section_id": "lien-he",
+      "type": "simple",
+      "design_guidance": "Bố cục đơn giản, cung cấp thông tin liên hệ rõ ràng. Có thể tích hợp một bản đồ Google Maps iframe chỉ vị trí.",
+      "content": {
+        "title": "Lên Kế Hoạch Cho Chuyến Đi Của Bạn",
+        "body": "Yên Hòa luôn chào đón bạn. Hãy liên hệ với chúng tôi để được tư vấn và hỗ trợ tốt nhất cho hành trình khám phá của bạn.",
+        "contact_info": {
+          "address": "Bản Yên Hòa, Xã Mỹ Lý, Huyện Kỳ Sơn, Tỉnh Nghệ An",
+          "phone": "0123.456.789 (Mr. A - Trưởng bản)",
+          "email": "dulich.yenhoa@example.com"
+        }
+      }
+    }
+  ],
+  "footer": {
+    "design_guidance": "Footer 3 cột. Cột 1: Logo và giới thiệu ngắn. Cột 2: Liên kết nhanh (sitemap). Cột 3: Thông tin liên hệ và mạng xã hội.",
+    "columns": [
+      {
+        "title": "Yên Hòa Du Lịch Cộng Đồng",
+        "content": "Một dự án nhằm lan tỏa vẻ đẹp văn hóa và thiên nhiên của bản Yên Hòa, góp phần phát triển kinh tế địa phương bền vững."
+      },
+      {
+        "title": "Khám Phá",
+        "links": [
+          { "text": "Di Sản Văn Hóa", "href": "#di-san" },
+          { "text": "Điểm Đến", "href": "#diem-den" },
+          { "text": "Trải Nghiệm", "href": "#trai-nghiem" }
+        ]
+      },
+      {
+        "title": "Kết Nối",
+        "socials": [
+          { "platform": "Facebook", "url": "#" },
+          { "platform": "Instagram", "url": "#" }
+        ]
+      }
+    ],
+    "copyright": "© 2025 Bản quyền thuộc về Ban phát triển Du lịch Bản Yên Hòa."
+  },
+  "interactions": [
+    {
+      "name": "Sticky Navbar",
+      "library": "JavaScript (hoặc Bootstrap attribute)",
+      "description": "Thanh điều hướng sẽ dính vào đầu trang khi người dùng cuộn xuống."
+    },
+    {
+      "name": "Smooth Scroll",
+      "library": "Locomotive Scroll",
+      "description": "Kích hoạt tính năng cuộn trang mượt mà trên toàn bộ trang web để tạo cảm giác cao cấp."
+    },
+    {
+      "name": "Scroll-triggered Animations",
+      "library": "GSAP + ScrollTrigger",
+      "description": "Các phần tử trong mỗi section (tiêu đề, văn bản, hình ảnh) sẽ có hiệu ứng mờ dần (fade in) hoặc trượt vào (slide in) khi chúng xuất hiện trong khung nhìn."
+    },
+    {
+      "name": "Back to Top Button",
+      "library": "JavaScript",
+      "description": "Một nút bấm sẽ xuất hiện ở góc dưới bên phải sau khi cuộn một khoảng cách nhất định, cho phép người dùng quay lại đầu trang nhanh chóng."
+    }
+  ]
+}
