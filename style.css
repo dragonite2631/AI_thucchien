@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 #hero {
     height: 100vh;
-    background: url('scraped_assets/baonghean_vn_kham-pha-ve-dep-du-lich-cong-dong-ban-yen-hoa-ky-son-10264904_html/images/image_008.png') no-repeat center center/cover;
+    background: url('AI_gen/hero_banner.png') no-repeat center center/cover;
     color: var(--text-light);
 }
 
@@ -38,6 +38,12 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2rem;
     border-radius: 0.5rem;
+}
+
+#hero h1.display-3 {
+    background: -webkit-linear-gradient(45deg, #fefae0, #d4a373, #a33b20);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 section {
@@ -99,4 +105,296 @@ footer a:hover {
     h1.display-3 {
         font-size: 2.5rem;
     }
+}
+
+.intro-image-wrapper {
+    position: relative;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    border-radius: 0.5rem;
+}
+
+.intro-image {
+    display: block;
+    width: 100%;
+    border-radius: 0.25rem;
+}
+
+#gioi-thieu .icon-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2rem;
+}
+
+#gioi-thieu .icon-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#gioi-thieu .icon-list i {
+    font-size: 1.75rem;
+    color: var(--secondary);
+    margin-right: 1rem;
+    width: 35px;
+    text-align: center;
+}
+
+#gioi-thieu .icon-list span {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+#trai-nghiem .experience-item {
+    background-color: #fff;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+#trai-nghiem .experience-item:hover {
+    transform: translateY(-10px) rotate(2deg);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+#trai-nghiem .experience-img-wrapper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+#trai-nghiem .experience-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#trai-nghiem .experience-item:hover img {
+    transform: scale(1.05);
+}
+
+#trai-nghiem .experience-item h4 {
+    font-family: var(--heading-font);
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    color: var(--primary);
+}
+
+.modal-content {
+    background-color: var(--background);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--secondary);
+}
+
+.modal-title {
+    font-family: var(--heading-font);
+    color: var(--primary);
+}
+
+.modal-body img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#thap-co {
+    background-color: var(--background);
+}
+
+#thap-co .thap-co-img {
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#thap-co .icon-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#thap-co .icon-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+#thap-co .icon-list i {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-right: 1rem;
+    margin-top: 0.25rem;
+    width: 30px;
+    text-align: center;
+}
+
+#lien-he {
+    background-color: #fff;
+}
+
+#lien-he .contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+#lien-he .contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+#lien-he .contact-info i {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-right: 1.5rem;
+    width: 40px;
+    text-align: center;
+}
+
+#lien-he .contact-info strong {
+    color: var(--primary);
+    display: block;
+    font-weight: 700;
+}
+
+#lien-he .map-placeholder {
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    background: url('AI_gen/map.png') no-repeat center center/cover;
+}
+
+#lien-he .map-placeholder:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 450px; /* Adjust as needed */
+    margin: auto;
+}
+
+.map-container img {
+    width: 100%;
+    height: auto;
+}
+
+.pulsating-dot {
+    position: absolute;
+    top: 40%; /* Adjusted position for Nghe An */
+    left: 42%; /* Adjusted position for Nghe An */
+    width: 20px;
+    height: 20px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 0 rgba(163, 59, 32, 0.7);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(163, 59, 32, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(163, 59, 32, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(163, 59, 32, 0);
+    }
+}
+
+.location-info {
+    position: absolute;
+    top: 40%; /* Adjusted position for Nghe An */
+    left: calc(42% + 25px); /* Position next to the dot */
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: nowrap;
+}
+
+.location-info.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.location-info h6 {
+    margin: 0;
+    font-family: var(--heading-font);
+    color: var(--primary);
+}
+
+.location-info p {
+    margin: 0.25rem 0 0;
+    font-size: 0.9rem;
+}
+
+#thu-vien {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+#thu-vien h2 {
+    color: var(--text-light);
+}
+
+.video-placeholder {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.video-placeholder img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.video-placeholder:hover img {
+    transform: scale(1.05);
+}
+
+.video-placeholder .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.video-placeholder:hover .play-button {
+    transform: translate(-50%, -50%) scale(1.1);
+    color: #fff;
 }

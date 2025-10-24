@@ -69,4 +69,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ScrollTrigger.addEventListener('refresh', () => locoScroll.update());
     ScrollTrigger.refresh();
+
+    // Map marker interaction
+    const mapMarker = document.getElementById('map-marker');
+    const locationPopup = document.getElementById('location-popup');
+
+    if (mapMarker && locationPopup) {
+        mapMarker.addEventListener('click', () => {
+            locationPopup.classList.toggle('active');
+        });
+    }
+
+    // Video modal control
+    const videoModal = document.getElementById('videoModal');
+    const yenHoaVideo = document.getElementById('yenHoaVideo');
+
+    if (videoModal && yenHoaVideo) {
+        videoModal.addEventListener('show.bs.modal', () => {
+            yenHoaVideo.play();
+        });
+
+        videoModal.addEventListener('hide.bs.modal', () => {
+            yenHoaVideo.pause();
+            yenHoaVideo.currentTime = 0;
+        });
+    }
 });
